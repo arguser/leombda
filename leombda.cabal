@@ -1,0 +1,25 @@
+name:                leombda
+version:             0.1.1
+author:              José Pablo Leandro Martin
+maintainer:          arguserλgmail.com
+copyright:           José Pablo Leandro Martin 2015
+license:             PublicDomain
+license-file:        LICENSE.txt
+extra-source-files:  README.md CHANGELOG.md
+category:            Data
+build-type:          Simple
+cabal-version:       >=1.18
+synopsis:            Leo's lambda calculus interpreter.
+homepage:            https://github.com/k0001/leombda
+bug-reports:         https://github.com/k0001/leombda/issues
+
+
+library
+  hs-source-dirs: src/lib
+  default-language: Haskell2010
+  exposed-modules:
+      Leombda.Parser
+  build-depends:
+      base >=4.7 && <4.9
+    , parsec >=3.1 && <3.2
+  ghc-options: -Wall -O
